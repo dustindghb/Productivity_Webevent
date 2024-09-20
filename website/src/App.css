@@ -40,14 +40,14 @@ nav {
     font-size: 1.5rem;
 }
 
-a {
+a:link, a:visited {
     color: black;
     text-decoration: none;
     text-decoration-color: white;
 }
 
 a:hover {
-    color: grey;
+    color: grey !important;
     text-decoration: underline;
     text-underline-offset: 1rem;
     text-decoration-color: rgb(181, 181, 181);
@@ -168,13 +168,13 @@ a:hover {
     padding-left: 50px;
 }
 
-.button-link:hover {
-    color: #0056b3;
-}
-
 .section_text_p1, .section_text_p2 {
     margin: 10px 0;
     line-height: 1.6;
+}
+
+.section_text_p1 a:hover {
+  color: grey;
 }
 
 /* Sections */
@@ -187,10 +187,11 @@ section {
 }
 
 .section_text_piece0b {
-    display: flex;
+    display: flext;
     font-family: monospace;
     font-size: 20px;
     line-height: 1.5;
     letter-spacing: 0.5em;
     padding: 20px;
+    text-align: center;
 }
